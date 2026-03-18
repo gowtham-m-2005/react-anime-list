@@ -20,7 +20,7 @@ function App() {
 
   return (
       <Routes>
-          <Route path="/" element={<Dashboard profile={profile} setProfile={setProfile} />} />
+          <Route path='/' element={<Login/>} />
           <Route path='/callback' element={<Callback/>} />
           <Route path='/dashboard' element={<Dashboard profile={profile} setProfile={setProfile}/>} />
           <Route path='/stats' element={<Stats profile={profile}/>}/>
