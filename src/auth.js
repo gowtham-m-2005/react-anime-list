@@ -102,7 +102,7 @@ export async function exchangeCodeForToken(code){
 
 
 export function getAccessToken() {
-    return localStorage.getItem('mal_access_token')
+    return localStorage.getItem('mal_access_token') || import.meta.env.VITE_MAL_ACCESS_TOKEN
 }
 
 export function logout() {
