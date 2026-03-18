@@ -1,16 +1,52 @@
-# React + Vite
+# MAL Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal MyAnimeList dashboard built with React + Vite.
+Live : https://react-anime-list-live.vercel.app/
 
-Currently, two official plugins are available:
+## Features
+- OAuth 2.0 PKCE login with MyAnimeList
+- View your anime list by status (watching, completed, on hold, dropped, plan to watch)
+- Genre filtering
+- Anime detail modal with synopsis, genres, scores and dates
+- Stats page with status breakdown chart
+- Skeleton loading cards
+- Profile picture and username display
+- Responsive design
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+- React + Vite
+- Tailwind CSS
+- React Router
+- MyAnimeList API
 
-## React Compiler
+## Setup
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Clone the repo
+```
+   git clone https://github.com/yourusername/react-anime-list.git
+   cd react-anime-list
+```
 
-## Expanding the ESLint configuration
+2. Install dependencies
+```
+   npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Create a `.env` file in the root:
+```
+   VITE_MAL_CLIENT_ID=your_client_id
+   VITE_MAL_CLIENT_SECRET=your_client_secret
+   VITE_MAL_REDIRECT_URI=http://localhost:5174/callback
+```
+
+4. Register your app at [myanimelist.net/apiconfig](https://myanimelist.net/apiconfig)
+   - App Type: Web
+   - Redirect URL: `http://localhost:5174/callback`
+
+5. Run the app
+```
+   npm run dev
+```
+
+## Screenshots
+coming soon
